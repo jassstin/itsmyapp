@@ -90,6 +90,7 @@
   const heartSection = document.getElementById('heart-section');
   const heart = document.getElementById('heart');
   const finalMessage = document.getElementById('final-message');
+  const landingHeader = document.querySelector('#landing h1'); // Grab the "From ??? ❤️"
 
   // Show GIF section initially
   gifSection.style.display = 'block';
@@ -108,10 +109,13 @@
       setTimeout(() => {
         heartSection.style.display = 'none';
         finalMessage.style.display = 'block';
+        // Update the header text to "From J ❤️"
+        landingHeader.textContent = "From J ❤️";
       }, 1000);
     }
   };
 </script>
+
 
 </body>
 </html>
